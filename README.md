@@ -1,5 +1,5 @@
-# BD-
-# Proyecto Python Flask - MongoDB - Login y CRUD de Tareas
+# R.A. 7 Uso de bases de datos no relacionales.
+# Proyecto NoSQL MongoDB
 
 ## Descripción
 
