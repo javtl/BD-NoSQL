@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 import os
 
 # Cargar el archivo .env (donde guardaremos las credenciales)
-load_dotenv()
+load_dotenv('conexiones.env')
 
 # Conectar a la base de datos MongoDB Atlas usando el URI que guardamos en el archivo .env
 MONGO_URI = os.getenv("MONGO_URI")  # URI de conexión a MongoDB
