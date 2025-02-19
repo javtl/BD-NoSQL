@@ -14,6 +14,7 @@ Este es un proyecto de **comparador de precios de criptomonedas** desarrollado c
 - **Python** + **FastAPI**
 - **MongoDB** (con Motor para la conexión)
 - **CoinGecko API**
+- **Uvicorn**
 
 ### Frontend:
 - **React** + **Vite.js**
@@ -66,4 +67,3 @@ crypto-price-comparator/
 
 ## 📜 Licencia
 Este proyecto se distribuye bajo la licencia **MIT**.
-
