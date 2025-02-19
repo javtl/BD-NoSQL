@@ -1,0 +1,28 @@
+/* src/style.css */
+.app {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  h2 {
+    color: #555;
+  }
+  
+  ul {
+    margin: 20px 0;
+  }
+  
+  li {
+    font-size: 18px;
+  }
+  
+  header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
