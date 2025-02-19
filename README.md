@@ -1,34 +1,69 @@
 # R.A. 7 Uso de bases de datos no relacionales.
-# Proyecto NoSQL MongoDB
+# Comparador Precios Criptomonedas:
 
-## Descripción
+Este es un proyecto de **comparador de precios de criptomonedas** desarrollado con **FastAPI, MongoDB y React (Vite.js)**.
 
-Este proyecto es una aplicación web desarrollada con **Python Flask** y **MongoDB**. La aplicación permite a los usuarios registrarse, iniciar sesión y gestionar un listado de tareas mediante un sistema CRUD (Crear, Leer, Actualizar, Eliminar). La base de datos utilizada para almacenar los datos de usuario y las tareas es **MongoDB**, lo que permite una solución escalable y flexible.
+## 🚀 Características
+- Obtiene precios de criptomonedas en tiempo real desde la API de **CoinGecko**.
+- Guarda datos en **MongoDB** para análisis histórico.
+- Proporciona una **API REST** con FastAPI.
+- **Frontend en React** con gráficos interactivos.
 
-## Características
+## 🛠️ Tecnologías Utilizadas
+### Backend:
+- **Python** + **FastAPI**
+- **MongoDB** (con Motor para la conexión)
+- **CoinGecko API**
 
-- **Login y Registro**: Los usuarios pueden crear una cuenta y acceder a la aplicación mediante autenticación.
-- **CRUD de Tareas**: Los usuarios pueden añadir, editar, ver y eliminar tareas.
-- **MongoDB**: Uso de MongoDB como base de datos para almacenar usuarios y tareas.
-- **Flask**: Framework ligero para desarrollar aplicaciones web en Python.
+### Frontend:
+- **React** + **Vite.js**
+- **Axios** para llamadas a la API
+- **Recharts** para gráficos
 
-## Tecnologías utilizadas
+## 📂 Estructura del Proyecto
+```
+crypto-price-comparator/
+├── backend/      # Código del Backend (FastAPI)
+│   ├── main.py   # Archivo principal con FastAPI
+│   ├── database.py   # Configuración de MongoDB
+│   └── requirements.txt   # Dependencias del backend
+│
+├── frontend/     # Código del Frontend (React)
+│   ├── src/
+│   │   ├── components/   # Componentes reutilizables
+│   │   ├── pages/   # Páginas principales
+│   │   ├── api.js   # Llamadas a la API
+│   │   └── App.jsx   # Punto de entrada de React
+│   └── package.json   # Dependencias del frontend
+```
 
-- **Python 3.x**
-- **Flask**: Framework para desarrollar aplicaciones web.
-- **MongoDB**: Base de datos NoSQL para almacenar datos.
-- **PyMongo**: Librería para interactuar con MongoDB desde Python.
-- **HTML/CSS**: Para el desarrollo del frontend básico.
-- **JavaScript**: Para la interacción dinámica en la aplicación.
-
-## Instalación
-
-### Prerequisitos
-
-Asegúrate de tener **Python 3** y **MongoDB** instalados en tu sistema.
-
-1. **Clonar el repositorio**:
-
+## 🏗️ Instalación y Ejecución
+### Backend:
+1. Clonar el repositorio e instalar dependencias:
    ```bash
-   git clone https://github.com/javtl/BD-NoSQL.git
-   cd proyecto-flask-mongodb-tareas
+   cd backend
+   pip install -r requirements.txt
+   ```
+2. Ejecutar el backend:
+   ```bash
+   uvicorn main:app --reload
+   ```
+3. El backend se ejecutará en `http://127.0.0.1:8000`
+
+### Frontend:
+1. Instalar dependencias:
+   ```bash
+   cd frontend
+   npm install
+   ```
+2. Ejecutar el frontend:
+   ```bash
+   npm run dev
+   ```
+3. Acceder a `http://localhost:5173`
+
+
+
+## 📜 Licencia
+Este proyecto se distribuye bajo la licencia **MIT**.
+
